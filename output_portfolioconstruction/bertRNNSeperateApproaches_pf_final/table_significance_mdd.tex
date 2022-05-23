@@ -1,0 +1,52 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}                    &       mdd        & \textbf{  R-squared:         } &     0.204   \\
+\textbf{Model:}                            &       OLS        & \textbf{  Adj. R-squared:    } &     0.156   \\
+\textbf{Method:}                           &  Least Squares   & \textbf{  F-statistic:       } &     4.223   \\
+\textbf{Date:}                             & Fri, 20 May 2022 & \textbf{  Prob (F-statistic):} &  1.16e-08   \\
+\textbf{Time:}                             &     09:58:06     & \textbf{  Log-Likelihood:    } &    796.78   \\
+\textbf{No. Observations:}                 &         351      & \textbf{  AIC:               } &    -1552.   \\
+\textbf{Df Residuals:}                     &         330      & \textbf{  BIC:               } &    -1470.   \\
+\textbf{Df Model:}                         &          20      & \textbf{                     } &             \\
+\textbf{Covariance Type:}                  &    nonrobust     & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                           & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}                         &      -0.4702  &        0.006     &   -80.033  &         0.000        &       -0.482    &       -0.459     \\
+\textbf{model[T.yiyanghkust/finbert-tone]} &       0.0002  &        0.003     &     0.060  &         0.952        &       -0.006    &        0.006     \\
+\textbf{source[T.Twitter]}                 &      -0.0016  &        0.003     &    -0.513  &         0.608        &       -0.008    &        0.005     \\
+\textbf{dropout}                           &       0.0027  &        0.001     &     1.828  &         0.068        &       -0.000    &        0.006     \\
+\textbf{epochs}                            &      -0.0085  &        0.002     &    -5.569  &         0.000        &       -0.011    &       -0.005     \\
+\textbf{learning\_rate}                    &      -0.0050  &        0.002     &    -3.255  &         0.001        &       -0.008    &       -0.002     \\
+\textbf{linear\_layers}                    &       0.0010  &        0.002     &     0.637  &         0.525        &       -0.002    &        0.004     \\
+\textbf{portfolio\_dim}                    &      -0.0164  &        0.005     &    -3.104  &         0.002        &       -0.027    &       -0.006     \\
+\textbf{portfolio\_layers}                 &      -0.0018  &        0.002     &    -1.085  &         0.279        &       -0.005    &        0.001     \\
+\textbf{rnn\_layers}                       &       0.0026  &        0.002     &     1.135  &         0.257        &       -0.002    &        0.007     \\
+\textbf{use\_attention}                    &       0.0017  &        0.001     &     1.194  &         0.233        &       -0.001    &        0.005     \\
+\textbf{use\_price}                        &      -0.0019  &        0.002     &    -1.183  &         0.238        &       -0.005    &        0.001     \\
+\textbf{window\_size}                      &       0.0007  &        0.002     &     0.428  &         0.669        &       -0.003    &        0.004     \\
+\textbf{np.power(rnn\_layers, 2)}          &       0.0006  &        0.002     &     0.302  &         0.763        &       -0.003    &        0.004     \\
+\textbf{np.power(dropout, 2)}              &       0.0010  &        0.001     &     0.647  &         0.518        &       -0.002    &        0.004     \\
+\textbf{np.power(learning\_rate, 2)}       &       0.0043  &        0.002     &     2.761  &         0.006        &        0.001    &        0.007     \\
+\textbf{np.power(portfolio\_dim, 2)}       &       0.0081  &        0.003     &     2.623  &         0.009        &        0.002    &        0.014     \\
+\textbf{np.power(window\_size, 2)}         &       0.0032  &        0.002     &     1.698  &         0.091        &       -0.001    &        0.007     \\
+\textbf{np.power(portfolio\_layers, 2)}    &      -0.0019  &        0.002     &    -0.897  &         0.371        &       -0.006    &        0.002     \\
+\textbf{np.power(linear\_layers, 2)}       &      -0.0023  &        0.002     &    -1.302  &         0.194        &       -0.006    &        0.001     \\
+\textbf{np.power(epochs, 2)}               &       0.0040  &        0.002     &     2.169  &         0.031        &        0.000    &        0.008     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       & 11.362 & \textbf{  Durbin-Watson:     } &    1.749  \\
+\textbf{Prob(Omnibus):} &  0.003 & \textbf{  Jarque-Bera (JB):  } &   22.514  \\
+\textbf{Skew:}          &  0.058 & \textbf{  Prob(JB):          } & 1.29e-05  \\
+\textbf{Kurtosis:}      &  4.235 & \textbf{  Cond. No.          } &     17.8  \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

@@ -1,0 +1,48 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}                    &   sortinoRatio   & \textbf{  R-squared:         } &     0.741   \\
+\textbf{Model:}                            &       OLS        & \textbf{  Adj. R-squared:    } &     0.727   \\
+\textbf{Method:}                           &  Least Squares   & \textbf{  F-statistic:       } &     52.23   \\
+\textbf{Date:}                             & Sat, 21 May 2022 & \textbf{  Prob (F-statistic):} &  9.04e-76   \\
+\textbf{Time:}                             &     12:49:49     & \textbf{  Log-Likelihood:    } &   -213.70   \\
+\textbf{No. Observations:}                 &         309      & \textbf{  AIC:               } &     461.4   \\
+\textbf{Df Residuals:}                     &         292      & \textbf{  BIC:               } &     524.9   \\
+\textbf{Df Model:}                         &          16      & \textbf{                     } &             \\
+\textbf{Covariance Type:}                  &    nonrobust     & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                           & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}                         &       1.7933  &        0.099     &    18.171  &         0.000        &        1.599    &        1.987     \\
+\textbf{model[T.yiyanghkust/finbert-tone]} &       0.0722  &        0.059     &     1.224  &         0.222        &       -0.044    &        0.188     \\
+\textbf{source[T.Twitter]}                 &      -1.3730  &        0.078     &   -17.530  &         0.000        &       -1.527    &       -1.219     \\
+\textbf{dropout}                           &      -0.0642  &        0.035     &    -1.817  &         0.070        &       -0.134    &        0.005     \\
+\textbf{epochs}                            &       0.0227  &        0.031     &     0.733  &         0.464        &       -0.038    &        0.084     \\
+\textbf{learning\_rate}                    &      -0.1783  &        0.032     &    -5.655  &         0.000        &       -0.240    &       -0.116     \\
+\textbf{linear\_layers}                    &      -0.1113  &        0.030     &    -3.715  &         0.000        &       -0.170    &       -0.052     \\
+\textbf{rnn\_layers}                       &      -0.1714  &        0.042     &    -4.075  &         0.000        &       -0.254    &       -0.089     \\
+\textbf{use\_attention}                    &       0.0065  &        0.029     &     0.224  &         0.823        &       -0.050    &        0.063     \\
+\textbf{use\_price}                        &       0.0389  &        0.031     &     1.268  &         0.206        &       -0.021    &        0.099     \\
+\textbf{window\_size}                      &      -0.2533  &        0.037     &    -6.820  &         0.000        &       -0.326    &       -0.180     \\
+\textbf{np.power(rnn\_layers, 2)}          &       0.0063  &        0.042     &     0.150  &         0.881        &       -0.077    &        0.089     \\
+\textbf{np.power(window\_size, 2)}         &       0.0153  &        0.039     &     0.388  &         0.698        &       -0.062    &        0.093     \\
+\textbf{np.power(linear\_layers, 2)}       &      -0.0539  &        0.037     &    -1.457  &         0.146        &       -0.127    &        0.019     \\
+\textbf{np.power(learning\_rate, 2)}       &       0.0567  &        0.032     &     1.762  &         0.079        &       -0.007    &        0.120     \\
+\textbf{np.power(epochs, 2)}               &      -0.0911  &        0.035     &    -2.639  &         0.009        &       -0.159    &       -0.023     \\
+\textbf{np.power(dropout, 2)}              &       0.0196  &        0.031     &     0.639  &         0.523        &       -0.041    &        0.080     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       & 37.050 & \textbf{  Durbin-Watson:     } &    1.169  \\
+\textbf{Prob(Omnibus):} &  0.000 & \textbf{  Jarque-Bera (JB):  } &   52.434  \\
+\textbf{Skew:}          & -0.788 & \textbf{  Prob(JB):          } & 4.11e-12  \\
+\textbf{Kurtosis:}      &  4.260 & \textbf{  Cond. No.          } &     11.2  \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

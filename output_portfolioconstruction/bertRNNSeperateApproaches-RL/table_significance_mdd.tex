@@ -1,0 +1,49 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}              &       mdd        & \textbf{  R-squared:         } &     0.875   \\
+\textbf{Model:}                      &       OLS        & \textbf{  Adj. R-squared:    } &     0.841   \\
+\textbf{Method:}                     &  Least Squares   & \textbf{  F-statistic:       } &     25.91   \\
+\textbf{Date:}                       & Fri, 20 May 2022 & \textbf{  Prob (F-statistic):} &  1.50e-18   \\
+\textbf{Time:}                       &     10:03:42     & \textbf{  Log-Likelihood:    } &    180.53   \\
+\textbf{No. Observations:}           &          67      & \textbf{  AIC:               } &    -331.1   \\
+\textbf{Df Residuals:}               &          52      & \textbf{  BIC:               } &    -298.0   \\
+\textbf{Df Model:}                   &          14      & \textbf{                     } &             \\
+\textbf{Covariance Type:}            &    nonrobust     & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                     & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}                   &      -0.2335  &        0.006     &   -37.795  &         0.000        &       -0.246    &       -0.221     \\
+\textbf{reward[T.sharpeRatio]}       &      -0.0046  &        0.006     &    -0.751  &         0.456        &       -0.017    &        0.008     \\
+\textbf{epochs}                      &      -0.1147  &        0.003     &   -33.105  &         0.000        &       -0.122    &       -0.108     \\
+\textbf{gamma}                       &      -0.0031  &        0.003     &    -1.121  &         0.267        &       -0.009    &        0.002     \\
+\textbf{learning\_rate}              &       0.0013  &        0.002     &     0.553  &         0.583        &       -0.004    &        0.006     \\
+\textbf{max\_memo}                   &       0.0023  &        0.003     &     0.835  &         0.408        &       -0.003    &        0.008     \\
+\textbf{net\_dim}                    &      -0.0119  &        0.003     &    -4.304  &         0.000        &       -0.017    &       -0.006     \\
+\textbf{target\_step}                &       0.0074  &        0.003     &     2.716  &         0.009        &        0.002    &        0.013     \\
+\textbf{tau}                         &       0.0047  &        0.003     &     1.658  &         0.103        &       -0.001    &        0.010     \\
+\textbf{np.power(net\_dim, 2)}       &      -0.0516  &        0.004     &   -11.973  &         0.000        &       -0.060    &       -0.043     \\
+\textbf{np.power(max\_memo, 2)}      &       0.0005  &        0.003     &     0.216  &         0.830        &       -0.005    &        0.006     \\
+\textbf{np.power(gamma, 2)}          &      -0.0014  &        0.003     &    -0.516  &         0.608        &       -0.007    &        0.004     \\
+\textbf{np.power(tau, 2)}            &      -0.0002  &        0.003     &    -0.079  &         0.937        &       -0.006    &        0.006     \\
+\textbf{np.power(learning\_rate, 2)} &      -0.0017  &        0.003     &    -0.641  &         0.525        &       -0.007    &        0.004     \\
+\textbf{np.power(target\_step, 2)}   &      -0.0089  &        0.002     &    -3.671  &         0.001        &       -0.014    &       -0.004     \\
+\textbf{np.power(epochs, 2)}         &      -0.1412  &        0.004     &   -36.532  &         0.000        &       -0.149    &       -0.133     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       & 28.612 & \textbf{  Durbin-Watson:     } &    2.160  \\
+\textbf{Prob(Omnibus):} &  0.000 & \textbf{  Jarque-Bera (JB):  } &   73.729  \\
+\textbf{Skew:}          &  1.288 & \textbf{  Prob(JB):          } & 9.77e-17  \\
+\textbf{Kurtosis:}      &  7.447 & \textbf{  Cond. No.          } & 2.89e+16  \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors assume that the covariance matrix of the errors is correctly specified. \newline
+ [2] The smallest eigenvalue is 7.54e-31. This might indicate that there are \newline
+ strong multicollinearity problems or that the design matrix is singular.

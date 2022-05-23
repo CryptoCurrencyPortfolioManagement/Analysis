@@ -1,0 +1,46 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}                    &       mdd        & \textbf{  R-squared:         } &     0.557   \\
+\textbf{Model:}                            &       OLS        & \textbf{  Adj. R-squared:    } &     0.490   \\
+\textbf{Method:}                           &  Least Squares   & \textbf{  F-statistic:       } &     8.350   \\
+\textbf{Date:}                             & Sat, 05 Feb 2022 & \textbf{  Prob (F-statistic):} &  2.75e-09   \\
+\textbf{Time:}                             &     10:05:29     & \textbf{  Log-Likelihood:    } &    133.26   \\
+\textbf{No. Observations:}                 &          85      & \textbf{  AIC:               } &    -242.5   \\
+\textbf{Df Residuals:}                     &          73      & \textbf{  BIC:               } &    -213.2   \\
+\textbf{Df Model:}                         &          11      & \textbf{                     } &             \\
+\textbf{Covariance Type:}                  &    nonrobust     & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                           & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}                         &      -0.1988  &        0.010     &   -19.247  &         0.000        &       -0.219    &       -0.178     \\
+\textbf{model[T.yiyanghkust/finbert-tone]} &      -0.0398  &        0.012     &    -3.256  &         0.002        &       -0.064    &       -0.015     \\
+\textbf{source[T.Twitter]}                 &       0.0121  &        0.013     &     0.968  &         0.336        &       -0.013    &        0.037     \\
+\textbf{dropout}                           &       0.0098  &        0.006     &     1.521  &         0.133        &       -0.003    &        0.023     \\
+\textbf{epochs}                            &      -0.0035  &        0.008     &    -0.464  &         0.644        &       -0.019    &        0.012     \\
+\textbf{freeze\_bert}                      &      -0.0084  &        0.007     &    -1.217  &         0.227        &       -0.022    &        0.005     \\
+\textbf{learning\_rate}                    &      -0.0007  &        0.007     &    -0.112  &         0.911        &       -0.014    &        0.012     \\
+\textbf{window\_size}                      &      -0.0054  &        0.008     &    -0.693  &         0.491        &       -0.021    &        0.010     \\
+\textbf{np.power(epochs, 2)}               &      -0.0130  &        0.007     &    -1.985  &         0.051        &       -0.026    &     5.43e-05     \\
+\textbf{np.power(dropout, 2)}              &       0.0172  &        0.007     &     2.411  &         0.018        &        0.003    &        0.031     \\
+\textbf{np.power(freeze\_bert, 2)}         &      -0.2006  &        0.010     &   -20.700  &         0.000        &       -0.220    &       -0.181     \\
+\textbf{np.power(window\_size, 2)}         &       0.0036  &        0.009     &     0.385  &         0.701        &       -0.015    &        0.022     \\
+\textbf{np.power(learning\_rate, 2)}       &       0.0028  &        0.011     &     0.259  &         0.797        &       -0.019    &        0.024     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       &  0.977 & \textbf{  Durbin-Watson:     } &    1.383  \\
+\textbf{Prob(Omnibus):} &  0.614 & \textbf{  Jarque-Bera (JB):  } &    0.608  \\
+\textbf{Skew:}          & -0.197 & \textbf{  Prob(JB):          } &    0.738  \\
+\textbf{Kurtosis:}      &  3.128 & \textbf{  Cond. No.          } & 1.15e+16  \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors assume that the covariance matrix of the errors is correctly specified. \newline
+ [2] The smallest eigenvalue is 4.75e-30. This might indicate that there are \newline
+ strong multicollinearity problems or that the design matrix is singular.

@@ -1,0 +1,47 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}              &   sortinoRatio   & \textbf{  R-squared:         } &     0.044   \\
+\textbf{Model:}                      &       OLS        & \textbf{  Adj. R-squared:    } &    -0.005   \\
+\textbf{Method:}                     &  Least Squares   & \textbf{  F-statistic:       } &    0.8914   \\
+\textbf{Date:}                       & Sat, 21 May 2022 & \textbf{  Prob (F-statistic):} &    0.574    \\
+\textbf{Time:}                       &     12:45:31     & \textbf{  Log-Likelihood:    } &   -3024.0   \\
+\textbf{No. Observations:}           &         308      & \textbf{  AIC:               } &     6080.   \\
+\textbf{Df Residuals:}               &         292      & \textbf{  BIC:               } &     6140.   \\
+\textbf{Df Model:}                   &          15      & \textbf{                     } &             \\
+\textbf{Covariance Type:}            &    nonrobust     & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                     & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}                   &     330.9596  &      917.218     &     0.361  &         0.718        &    -1474.237    &     2136.157     \\
+\textbf{source[T.Twitter]}           &     729.5901  &      544.027     &     1.341  &         0.181        &     -341.121    &     1800.301     \\
+\textbf{dropout}                     &    -197.4052  &      280.748     &    -0.703  &         0.483        &     -749.951    &      355.141     \\
+\textbf{epochs}                      &     165.1619  &      294.060     &     0.562  &         0.575        &     -413.584    &      743.908     \\
+\textbf{learning\_rate}              &      71.3843  &      267.883     &     0.266  &         0.790        &     -455.842    &      598.610     \\
+\textbf{linear\_layers}              &     244.7700  &      283.055     &     0.865  &         0.388        &     -312.318    &      801.857     \\
+\textbf{rnn\_layers}                 &     277.4844  &      271.566     &     1.022  &         0.308        &     -256.990    &      811.959     \\
+\textbf{use\_attention}              &    -363.9080  &      266.423     &    -1.366  &         0.173        &     -888.261    &      160.445     \\
+\textbf{use\_price}                  &    -195.6110  &      266.720     &    -0.733  &         0.464        &     -720.549    &      329.327     \\
+\textbf{window\_size}                &    -304.2382  &      265.654     &    -1.145  &         0.253        &     -827.078    &      218.602     \\
+\textbf{np.power(rnn\_layers, 2)}    &     128.4743  &      376.850     &     0.341  &         0.733        &     -613.213    &      870.162     \\
+\textbf{np.power(window\_size, 2)}   &     279.4877  &      358.606     &     0.779  &         0.436        &     -426.292    &      985.268     \\
+\textbf{np.power(linear\_layers, 2)} &     300.3286  &      411.186     &     0.730  &         0.466        &     -508.935    &     1109.593     \\
+\textbf{np.power(learning\_rate, 2)} &    -333.7884  &      309.720     &    -1.078  &         0.282        &     -943.354    &      275.777     \\
+\textbf{np.power(epochs, 2)}         &    -329.0505  &      311.963     &    -1.055  &         0.292        &     -943.031    &      284.930     \\
+\textbf{np.power(dropout, 2)}        &    -403.2320  &      317.375     &    -1.271  &         0.205        &    -1027.865    &      221.401     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       & 688.667 & \textbf{  Durbin-Watson:     } &     2.007   \\
+\textbf{Prob(Omnibus):} &   0.000 & \textbf{  Jarque-Bera (JB):  } & 971766.723  \\
+\textbf{Skew:}          &  16.173 & \textbf{  Prob(JB):          } &      0.00   \\
+\textbf{Kurtosis:}      & 276.269 & \textbf{  Cond. No.          } &      10.6   \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

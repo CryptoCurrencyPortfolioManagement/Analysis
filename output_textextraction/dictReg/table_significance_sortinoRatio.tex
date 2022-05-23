@@ -1,0 +1,40 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}                       &   sortinoRatio   & \textbf{  R-squared:         } &     0.096   \\
+\textbf{Model:}                               &       OLS        & \textbf{  Adj. R-squared:    } &     0.066   \\
+\textbf{Method:}                              &  Least Squares   & \textbf{  F-statistic:       } &     3.201   \\
+\textbf{Date:}                                & Thu, 12 May 2022 & \textbf{  Prob (F-statistic):} &  0.00179    \\
+\textbf{Time:}                                &     11:15:58     & \textbf{  Log-Likelihood:    } &   -272.35   \\
+\textbf{No. Observations:}                    &         250      & \textbf{  AIC:               } &     562.7   \\
+\textbf{Df Residuals:}                        &         241      & \textbf{  BIC:               } &     594.4   \\
+\textbf{Df Model:}                            &           8      & \textbf{                     } &             \\
+\textbf{Covariance Type:}                     &    nonrobust     & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                              & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}                            &      -0.2739  &        0.125     &    -2.191  &         0.029        &       -0.520    &       -0.028     \\
+\textbf{feature[T.sentiment\_Vader]}          &      -0.0360  &        0.113     &    -0.317  &         0.751        &       -0.259    &        0.187     \\
+\textbf{feature[T.sentiment\_bert]}           &      -0.0045  &        0.113     &    -0.040  &         0.968        &       -0.228    &        0.219     \\
+\textbf{shared\_model[T.shared]}              &       0.1518  &        0.113     &     1.339  &         0.182        &       -0.071    &        0.375     \\
+\textbf{shared\_model[T.sharedWithIndicator]} &      -0.0377  &        0.113     &    -0.333  &         0.740        &       -0.261    &        0.186     \\
+\textbf{source[T.Twitter]}                    &       0.0430  &        0.093     &     0.464  &         0.643        &       -0.140    &        0.226     \\
+\textbf{use\_price}                           &      -0.1179  &        0.046     &    -2.545  &         0.012        &       -0.209    &       -0.027     \\
+\textbf{window\_size}                         &       0.0638  &        0.046     &     1.376  &         0.170        &       -0.028    &        0.155     \\
+\textbf{np.power(window\_size, 2)}            &       0.2007  &        0.054     &     3.724  &         0.000        &        0.095    &        0.307     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       &  7.444 & \textbf{  Durbin-Watson:     } &    0.189  \\
+\textbf{Prob(Omnibus):} &  0.024 & \textbf{  Jarque-Bera (JB):  } &    7.252  \\
+\textbf{Skew:}          &  0.375 & \textbf{  Prob(JB):          } &   0.0266  \\
+\textbf{Kurtosis:}      &  3.364 & \textbf{  Cond. No.          } &     6.62  \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

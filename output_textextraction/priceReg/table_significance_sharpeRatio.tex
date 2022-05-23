@@ -1,0 +1,36 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}                       &   sharpeRatio    & \textbf{  R-squared:         } &     0.733   \\
+\textbf{Model:}                               &       OLS        & \textbf{  Adj. R-squared:    } &     0.661   \\
+\textbf{Method:}                              &  Least Squares   & \textbf{  F-statistic:       } &     10.27   \\
+\textbf{Date:}                                & Thu, 12 May 2022 & \textbf{  Prob (F-statistic):} &  0.000328   \\
+\textbf{Time:}                                &     11:15:33     & \textbf{  Log-Likelihood:    } &    1.1704   \\
+\textbf{No. Observations:}                    &          20      & \textbf{  AIC:               } &     7.659   \\
+\textbf{Df Residuals:}                        &          15      & \textbf{  BIC:               } &     12.64   \\
+\textbf{Df Model:}                            &           4      & \textbf{                     } &             \\
+\textbf{Covariance Type:}                     &    nonrobust     & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                              & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}                            &      -0.1784  &        0.120     &    -1.481  &         0.159        &       -0.435    &        0.078     \\
+\textbf{shared\_model[T.shared]}              &      -0.0630  &        0.147     &    -0.429  &         0.674        &       -0.376    &        0.250     \\
+\textbf{shared\_model[T.sharedWithIndicator]} &      -0.0378  &        0.141     &    -0.268  &         0.792        &       -0.338    &        0.262     \\
+\textbf{window\_size}                         &       0.3671  &        0.059     &     6.204  &         0.000        &        0.241    &        0.493     \\
+\textbf{np.power(window\_size, 2)}            &       0.1480  &        0.070     &     2.104  &         0.053        &       -0.002    &        0.298     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       &  1.564 & \textbf{  Durbin-Watson:     } &    1.092  \\
+\textbf{Prob(Omnibus):} &  0.458 & \textbf{  Jarque-Bera (JB):  } &    0.641  \\
+\textbf{Skew:}          &  0.429 & \textbf{  Prob(JB):          } &    0.726  \\
+\textbf{Kurtosis:}      &  3.184 & \textbf{  Cond. No.          } &     5.37  \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
